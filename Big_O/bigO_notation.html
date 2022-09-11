@@ -1,0 +1,45 @@
+<script>
+// BigO 표기법 - 자료구조에서 상당히 중요힘
+// 빅오 표기법을 사용하여 여러가지 알고리즘을 표현
+// BigO 의 핵심은 여러가지 코드를 일반적으로 서로 비교하고 성능을 평가하는 방법
+// 코드의 성능을 얘기할 때는 정확한 전문용어를 사용하는 것이 중요
+// 코드를 디버그 시 코드를 느리게 만드는 것을 이해하는 것이 중요
+
+// EX
+// 1 에서 부터 특정한 N 값 사이에 있는 모든 숫자들을 더하는 함수
+
+// 1. 가장 기본 적인 방법
+function addUpTo_1(n) {
+    let total = 0;
+    for(let i = 0; i<= n; i++) {
+        total += i;
+    }
+    return total;
+}
+
+// 2. 수학적인 공식을 이용 
+function addUpTo_2(n) {
+    return n*(n+1)/2;
+}
+
+let f1_t1 = performance.now();
+let totalTest_1 = addUpTo_1(1000000);
+let f1_t2 = performance.now();
+
+console.log(`F1 함수 소요 시간 : ${(f1_t2 - f1_t1)/1000} seconds`)
+
+console.log('6 TOTAL TEST :  ' + addUpTo_1(6));
+console.log('10 TOTAL TEST : ' + totalTest_1);
+
+let totalTest_2 = addUpTo_2(10);
+console.log('6 TOTAL TEST :  ' + addUpTo_2(6));
+console.log('10 TOTAL TEST : ' + totalTest_2);
+
+// 어떤 코드가 더 나은지 ? 비교 기준은 더 빠른지 ... ?
+// 메모리를 얼마나 사용을 하는 지 ... ? , 코드를 얼마나 쉽게 빨리 읽을 수 있는지... ??
+
+// 코드가 실행하는데 걸리는 시간을 측정 
+// 1. 내장되어있는 함수 (performance.now()) 를 사용 
+
+
+</script>
