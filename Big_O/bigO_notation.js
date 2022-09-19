@@ -18,6 +18,7 @@ function addUpTo_1(n) {
 
 // 2. 수학적인 공식을 이용 
 function addUpTo_2(n) {
+    // addUpto 는 연산이 3개 이므로 시간이 거의 일정
     return n*(n+1)/2;
 }
 
