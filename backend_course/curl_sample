@@ -1,0 +1,3 @@
+# curl 의 다양한 기능 --trace 를 사용하면 추적이 가능
+
+curl -v --trace out.txt http://google.com
