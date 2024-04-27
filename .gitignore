@@ -1,1 +1,5 @@
 backend_course/http_out/*.txt
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
