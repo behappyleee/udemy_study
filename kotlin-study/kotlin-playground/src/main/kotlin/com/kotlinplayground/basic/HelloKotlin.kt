@@ -1,4 +1,4 @@
-package com.canbe.com.kotlinplayground
+package com.canbe.com.kotlinplayground.basic
 
 class HelloKotlin {
 
