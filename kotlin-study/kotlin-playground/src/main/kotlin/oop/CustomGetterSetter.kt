@@ -31,10 +31,8 @@ class CustomGetterSetter() {
         }
     }
 
-
     constructor(_name: String): this() {
         name = _name
     }
-
 }
 
